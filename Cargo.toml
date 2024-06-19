@@ -33,7 +33,7 @@ log = "~0.4"
 serde = { version = "~1", features = ["rc"] }
 serde_json = "~1"
 regex = "~1"
-swagger-ui = { version = "0.1.5", optional = true }
+swagger-ui = { version = "*", optional = true, git = "https://github.com/myOmikron/swagger-ui" }
 
 actix-web = { version = "~4", optional = true }
 actix-files = { version = "~0.6", optional = true }
