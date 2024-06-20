@@ -171,7 +171,7 @@ const _: () = {
                 if let Some(file_content) = swagger_ui::Assets::get(&file_name) {
                     router = router.route(
                         &format!("{normal_path}/{file_name}"),
-                        serve_static(|| Response::new(Body::from(file_content))),
+                        serve_static(|| Response::new(Body::from(file_content.data))),
                     );
                 }
             }
